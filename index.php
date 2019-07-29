@@ -2,6 +2,11 @@
 <html>
 <head>
 	<title>javascript learning</title>
+	<script >
+		function myFunction() {
+					document.getElementById('demo1').innerHTML = 'my own paragraph';
+		}
+	</script>
 </head>
 <body>
 <h2>my javascript</h2>
@@ -26,6 +31,24 @@
 <script>
 	document.getElementById('javascr').innerHTML = 'hello world'
 </script>
+
+<h1>higher priority tag</h1>
+<p id="demo1">my paragraph which is going to change after click</p>
+<button type="button" onclick="myFunction()">tryit</button>
+
+
+<p id="abcdef">fontsize is going to change</p>
+<button type="button" onclick="myFunc()">function</button>
+
+<script>
+	function myFunc() {
+		document.getElementById('abcdef').style.fontSize = '40px';
+	}
+</script>
+
+<script src="js/myfile1.js"></script>
+<p id="demo_new">abcdefgihoijrfeiopghkffl</p>
+<button type="button" onclick="myfunc()">button</button>
 
 </body>
 </html>
