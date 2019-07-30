@@ -2,11 +2,15 @@
 <html>
 <head>
 	<title>javascript learning</title>
+
+
 	<script >
 		function myFunction() {
 					document.getElementById('demo1').innerHTML = 'my own paragraph';
 		}
 	</script>
+
+
 </head>
 <body>
 <h2>my javascript</h2>
@@ -49,6 +53,15 @@
 <script src="js/myfile1.js"></script>
 <p id="demo_new">abcdefgihoijrfeiopghkffl</p>
 <button type="button" onclick="myfunc()">button</button>
+
+
+<h1>abcd</h1>
+<p>hbfrhejekas</p>
+
+<script>
+	window.alert(8+9);	
+</script>
+
 
 </body>
 </html>
