@@ -6,185 +6,242 @@
            
 
            <style type="text/css">
-           	#flip {
+           	/*#flip {
            		padding: 5px;
            		background-color: yellow;
            		text-align: center;
+           	}*/
+
+
+           	#flip_anim {
+           		background-color: pink;
+           		padding: 5px;
+           		text-align: center;
            	}
+             
+
+             #panel_anim {
+             	display: none;
+             	padding: 50px;
+             	background-color: yellow;
+             }
+
+
            </style>
 
 			<script>
 		$(document).ready(function() {
-			$('p').click(function() {
-				$(this).hide();
-			});
+// 			$('p').click(function() {
+// 				$(this).hide();
+// 			});
 
-			   $("button").click(function(){
-              	$('#test').hide();
+// 			   $("button").click(function(){
+//               	$('#test').hide();
 
-              });
+//               });
 
-			   $("button").click(function(){
-			   		$(".demo").hide();
-			   });
+// 			   $("button").click(function(){
+// 			   		$(".demo").hide();
+// 			   });
 
-			   $("button").click(function() {
-			   	$("*").hide();
+// 			   $("button").click(function() {
+// 			   	$("*").hide();
 
-			   });
+// 			   });
 
-			   $("button").click(function() {
-			   	$("p.demo").hide();
-			   });
+// 			   $("button").click(function() {
+// 			   	$("p.demo").hide();
+// 			   });
 
-			   $("button").click(function() {
-			   		$("p:first").hide();
-			   })
+// 			   $("button").click(function() {
+// 			   		$("p:first").hide();
+// 			   })
 
-			   $("button").click(function() {
-			   		$("ul li:first").hide();
-			   });
+// 			   $("button").click(function() {
+// 			   		$("ul li:first").hide();
+// 			   });
 
-			   $("button").click(function() {
-			   		$("[href]").hide();
-			   });
-
-
-			   $("button").click(function(){
-			   		$("a[target= '_blank']").hide();
-			   });
+// 			   $("button").click(function() {
+// 			   		$("[href]").hide();
+// 			   });
 
 
-			   $("button").click(function() {
-			   	$("a[target!= '_blank']").hide();
-			   })
+// 			   $("button").click(function(){
+// 			   		$("a[target= '_blank']").hide();
+// 			   });
 
 
-			   $("button").click(function() {
-
-			   		$("ul li:first-child").hide();
-
-			   });
+// 			   $("button").click(function() {
+// 			   	$("a[target!= '_blank']").hide();
+// 			   })
 
 
-// tuesday's jquery learning 
+// 			   $("button").click(function() {
 
-		$("p").dblclick(function() {
-           $(this).hide();
-		});
+// 			   		$("ul li:first-child").hide();
 
-
-		$("p").mouseenter(function() {
-			alert("mouse is pointed");
-		});
+// 			   });
 
 
-		$("p").mouseleave(function() {
-			alert("mouse leavinng");
-		});
+// // tuesday's jquery learning 
+
+// 		$("p").dblclick(function() {
+//            $(this).hide();
+// 		});
 
 
-			$("p").mousedown(function() {
-				alert("mouse down pointed");
-			});
+// 		$("p").mouseenter(function() {
+// 			alert("mouse is pointed");
+// 		});
 
 
-		$("p").mouseup(function() {
-			alert("mouseup function");
-		});
+// 		$("p").mouseleave(function() {
+// 			alert("mouse leavinng");
+// 		});
 
 
-		$("p").hover(function(){
-			$("p").css("background-color", "yellow");
-		}, function(){
-			$("p").css("background-color", "blue");
-		});
+// 			$("p").mousedown(function() {
+// 				alert("mouse down pointed");
+// 			});
 
 
-		$("input").focus(function() {
-			$(this).css("background-color", "pink");
-		});
+// 		$("p").mouseup(function() {
+// 			alert("mouseup function");
+// 		});
 
 
-		$("p").on({
-			mouseenter: function() {
-				$(this).css("color", "pink");
-			},
-
-			mouseleave: function() {
-				$(this).css("color", "pink");
-			},
-
-			click: function() {
-				$(this).css("color", "pink");
-			}
-
-		});
-
-		$("#hide").click(function() {
-			$("p").hide(1000);
-		});
-		$("#show").click(function() {
-           $("p").show();
-		});
+// 		$("p").hover(function(){
+// 			$("p").css("background-color", "yellow");
+// 		}, function(){
+// 			$("p").css("background-color", "blue");
+// 		});
 
 
-		$("button").click(function() {
-			$("p").toggle();
-
-		});
-
+// 		$("input").focus(function() {
+// 			$(this).css("background-color", "pink");
+// 		});
 
 
-		$("button").click(function() {
-			$("#div1").fadeIn();
-			$("#div2").fadeIn("slow");
-			$("#div3").fadeIn(3000);
+// 		$("p").on({
+// 			mouseenter: function() {
+// 				$(this).css("color", "pink");
+// 			},
 
-		});
+// 			mouseleave: function() {
+// 				$(this).css("color", "pink");
+// 			},
+
+// 			click: function() {
+// 				$(this).css("color", "pink");
+// 			}
+
+// 		});
+
+// 		$("#hide").click(function() {
+// 			$("p").hide(1000);
+// 		});
+// 		$("#show").click(function() {
+//            $("p").show();
+// 		});
+
+
+// 		$("button").click(function() {
+// 			$("p").toggle();
+
+// 		});
 
 
 
-		$("button").click(function() {
-			$("#div1").fadeOut();
-			$("#div2").fadeOut("slow");
-			$("#div3").fadeOut(3000);
+// 		$("button").click(function() {
+// 			$("#div1").fadeIn();
+// 			$("#div2").fadeIn("slow");
+// 			$("#div3").fadeIn(3000);
 
-		});
-
-
-		$("button").click(function() {
-			$("#div1").fadeToggle();
-			$("#div2").fadeToggle("slow");
-			$("#div3").fadeToggle(4000);
-		});
-
-
-		$("button").click(function() {
-			$("#div1").fadeTo("slow",0.25);
-			$("#div2").fadeTo("fast",0.5);
-			$("#div3").fadeTo(3000,0.75);
-		});
-
-
-		$("#flip").click(function() {
-			$("#panel").slideDown("slow");
-
-		});
+// 		});
 
 
 
-		$("#flip").click(function() {
-			$("#panel").slideUp("slow");
-		});
+// 		$("button").click(function() {
+// 			$("#div1").fadeOut();
+// 			$("#div2").fadeOut("slow");
+// 			$("#div3").fadeOut(3000);
+
+// 		});
 
 
-		$("#flip").click(function() {
-			$("#panel").slideToggle ("slow");
+// 		$("button").click(function() {
+// 			$("#div1").fadeToggle();
+// 			$("#div2").fadeToggle("slow");
+// 			$("#div3").fadeToggle(4000);
+// 		});
+
+
+// 		$("button").click(function() {
+// 			$("#div1").fadeTo("slow",0.25);
+// 			$("#div2").fadeTo("fast",0.5);
+// 			$("#div3").fadeTo(3000,0.75);
+// 		});
+
+
+// 		$("#flip").click(function() {
+// 			$("#panel").slideDown("slow");
+
+// 		});
+
+
+
+// 		$("#flip").click(function() {
+// 			$("#panel").slideUp("slow");
+// 		});
+
+
+// 		$("#flip").click(function() {
+// 			$("#panel").slideToggle ("slow");
+// 		})
+
+
+		// $("button").click(function() {
+		// 	$("div").animate({left: '250px', opacity: '0.5', height: '150px', width: '150px'});
+		// });
+
+
+		// $("button").click(function() {
+		// 	$("div").animate({left: '250px', height:'+=150px', width: '+=150px'}, "slow");
+
+		// });
+
+		// $("button").click(function(){
+		// 	$("div").animate({height: 'toggle'});
+		// });
+
+		// $("button").click(function(){
+		// 	$("div").animate({height: 'hide'});
+		// });
+
+
+		// $("button").click(function(){
+		// var div	= $("div");
+
+		// div.animate({height: '150px', width: '200px', opacity: '0.2'}, "slow");
+		// div.animate({width: 'toggle'}, '5000');
+		// div.animate({height: '30px', opacity: '0.75'}, "slow");
+		// });
+
+
+
+		// $("button").click(function() {
+		// 	var div	=  $("div");
+		// 	div.animate({left: '250px', width: '140px', height: '50px'}, "slow");
+		// 	div.animate({fontSize: '40px'}, "slow");
+		// });
+
+		$("#flip_anim").click(function() {
+			$("#panel_anim").slideDown(5000);
 		})
 
-
-
+		$("#stop").click(function() {
+			$("#panel_anim").stop();
+		});
 
 
 		});
@@ -199,7 +256,7 @@
 
 <!-- 
 <P>first para</P> -->
-<P>second para</P>
+<!-- <P>second para</P>
 <p>third para</p>
 
 <h1>hide through id</h1>
@@ -281,9 +338,20 @@
 
 <div id="panel" style="padding-top: 50px; background-color: pink; text-align: center;">
 	hello
-</div>
+</div> -->
 
 
+<!-- 
+<button type="button">start animationn</button>
+<p>position is static by default have to give the  position as fixed absolute or relaive</p>
+<div style="height: 100px; width: 100px; background-color: #98bf21; position: absolute;">Hello</div>
+ -->
+
+
+ <button type="button" id="stop">stop button</button>
+
+ <div id="flip_anim">click to slide down</div>
+ <div id="panel_anim">Hello orld</div>
 
 
 
