@@ -20,24 +20,24 @@
 <script>
   $(document).ready(function(){
 
-  	$("button").click(function(){
-  		$("p").hide("1000", function(){
-  			alert("paragraph is hidden");
+  	// $("button").click(function(){
+  	// 	$("p").hide("1000", function(){
+  	// 		alert("paragraph is hidden");
 
-  		});
-  	});
-
-
-      $("button").click(function(){
-        $("p").hide(1000);
-        alert("paragraph is hidden");
-      });
+  	// 	});
+  	// });
 
 
-   $("button").click(function(){
-    $("p").css("color", "red").slideUp(2000).slideDown(2000);
+      // $("button").click(function(){
+      //   $("p").hide(1000);
+      //   alert("paragraph is hidden");
+      // });
 
-   });
+
+   // $("button").click(function(){
+   //  $("p").css("color", "red").slideUp(2000).slideDown(2000);
+
+   // });
 
    $("#text").click(function(){
     alert("text:" + $("#test").text());
@@ -125,13 +125,7 @@ $("#btn2").click(function(){
 });
 
 
-function afterText(){
-  var text1 = "i";
-  var text2 = $("<i></i>").text("am");
-  var text3 = document.createElement("b");
-  text3.innerHTML = "bad";
-  $("img").after(text1, text2, text3);
-}
+
 
 
 $("#btn").click(function(){
@@ -193,6 +187,15 @@ $("#btn").click(function(){
 
 
 	}); 
+
+
+  function afterText(){
+  var text1 = "i";
+  var text2 = $("<i></i>").text("am");
+  var text3 = document.createElement("b");
+  text3.innerHTML = "bad";
+  $("img").after(text1, text2, text3);
+}   
   </script>
 
 </head>
